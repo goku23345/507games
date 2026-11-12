@@ -2,7 +2,15 @@
 
 供朋友共同开发的 Unity 平台战斗白模。此存档对应最后试玩的**含上层伸缩地刺版本**，包含冲撞破门、中继钥匙任务、安全缺口、地下双路线、必经升降台、多层 Boss、剧情道具及末端返回上层。
 
-## 打开试玩
+## 直接下载试玩（不需要 Unity）
+
+[下载 Windows 64 位试玩包](https://github.com/goku23345/507games/releases/latest/download/507games-whitebox-windows-x64.zip) · [发布页](https://github.com/goku23345/507games/releases/latest)
+
+下载 ZIP 后**完整解压**，双击 **DodgeStudy.exe**，按 Enter 开始。不要只拿 exe，旁边的数据文件夹和 DLL 也要保留。
+
+下面的 Unity 工程用于共同开发；只想试玩的朋友下载上面的压缩包即可。
+
+## 在 Unity 中打开工程
 
 1. 安装 Unity **6000.6.5f1**（Unity 6.6）及 Windows Build Support。
 2. 克隆本仓库，在 Unity Hub 中添加仓库根目录。
