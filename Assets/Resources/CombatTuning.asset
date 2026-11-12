@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108f9736095f4df4d88902556ca69db9, type: 3}
+  m_Name: CombatTuning
+  m_EditorClassIdentifier: Assembly-CSharp::CombatTuning
+  playerHP: 100
+  enemyHP: 60
+  bossHP: 240
+  attackDamage: 20
+  thirdAttackDamage: 30
+  enemyDamage: 20
+  bossDamage: 25
+  ramDamage: 30
+  counterMultiplier: 1.5
+  walkSpeed: 5.2
+  jumpVelocity: 11.5
+  gravity: 24
+  dodgeSpeed: 8
+  dodgeDuration: 0.6
+  dodgeInvStart: 0.08
+  dodgeInvEnd: 0.42
+  hitInvulnerability: 0.65
+  attackWindup: 0.12
+  attackActiveEnd: 0.24
+  attackDuration: 0.52
+  thirdAttackDuration: 0.6
+  attackNear: 0.15
+  attackReach: 1.85
+  attackBottom: 0.25
+  attackHeight: 1.5
+  playerHalfWidth: 0.3
+  playerBodyBottom: 0.05
+  playerBodyHeight: 1.7
+  enemyHalfWidth: 0.35
+  enemyBodyBottom: 0.05
+  enemyBodyHeight: 1.8
+  bossChargeWindup: 0.95
+  bossWaveWindup: 1.05
+  bossSlamWindup: 1.25
+  bossChargeSpeed: 10
+  bossChargeDuration: 1.1
+  bossWaveDuration: 0.28
+  bossSlamDuration: 0.2
+  bossRecovery: 1.6
+  bossChargeDamage: 25
+  bossWaveDamage: 20
+  bossSlamDamage: 30
+  enemyChase: 1.6
+  enemyWindup: 0.8
+  enemyActive: 0.2
+  enemyRecovery: 1.3
+  enemyAttackNear: 0.1
+  enemyAttackReach: 2.05
+  enemyAttackBottom: 0.2
+  enemyAttackHeight: 1.6

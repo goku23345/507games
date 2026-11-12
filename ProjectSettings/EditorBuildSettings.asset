@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DodgeStudy.unity
+    guid: 2690970aaddbdde419e88eea18a7fb67
+  - enabled: 1
+    path: Assets/Scenes/LowerPassage.unity
+    guid: 6c097f663705ff640a27888d1db43535
+  m_configObjects: {}
