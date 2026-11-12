@@ -1,0 +1,2 @@
+下载 Windows游戏.zip 并完整解压，双击里面的 DodgeStudy.exe，按 Enter 开始。
+无需安装 Unity。请保留同目录的文件夹和 DLL。
