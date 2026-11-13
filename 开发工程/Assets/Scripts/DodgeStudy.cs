@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 public class DodgeStudy : MonoBehaviour {
  public float duration=1.65f, distance=2.8f;
@@ -32,7 +32,7 @@ public class DodgeStudy : MonoBehaviour {
  var light=new GameObject("Soft key").AddComponent<Light>();light.type=LightType.Directional;light.intensity=1;light.transform.rotation=Quaternion.Euler(35,-30,0);
  enemy=Instantiate(Resources.Load<GameObject>("Enemy")).transform;enemyAnim=enemy.GetComponentInChildren<Animator>();
  zone=Box("Attack warning",Mat(new Color(.85f,.2f,.12f)));weapon=Box("Scrap plank",Mat(new Color(.75f,.63f,.4f)));
- font=Font.CreateDynamicFontFromOSFont("Microsoft YaHei",18);
+ font=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei","PingFang SC","Heiti SC","Arial Unicode MS","Arial"},18);
  ResetFight(); started=verify; Tick(0,0,false,false); if(verify)StartCoroutine(VerifyFight());
  }
  Vector3 V(Vector2 v,float z=0){return new Vector3(pos+face*v.x,v.y,z);}

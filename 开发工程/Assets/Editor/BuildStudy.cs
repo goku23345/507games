@@ -169,7 +169,14 @@ public static class BuildStudy {
   EditorSceneManager.SaveOpenScenes();BuildCurrentPlayer();
  }
  static void BuildCurrentPlayer(){
-  var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{"Assets/Scenes/DodgeStudy.unity","Assets/Scenes/LowerPassage.unity"},locationPathName="Build/DodgeStudy.exe",target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
+  bool mac=Application.platform==RuntimePlatform.OSXEditor;
+  var target=mac?BuildTarget.StandaloneOSX:BuildTarget.StandaloneWindows64;
+  var destination=mac?"Build/DodgeStudy.app":"Build/DodgeStudy.exe";
+  if(!BuildPipeline.IsBuildTargetSupported(BuildTargetGroup.Standalone,target)){
+   Debug.LogError("请在Unity Hub中为当前编辑器安装对应桌面平台的构建支持。");
+   if(Application.isBatchMode)EditorApplication.Exit(1);return;
+  }
+  var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{"Assets/Scenes/DodgeStudy.unity","Assets/Scenes/LowerPassage.unity"},locationPathName=destination,target=target,options=BuildOptions.Development});
   Debug.Log("STUDY_BUILD_RESULT "+report.summary.result+" errors="+report.summary.totalErrors);
   if(report.summary.result!=BuildResult.Succeeded&&Application.isBatchMode)EditorApplication.Exit(1);
  }

@@ -25,3 +25,7 @@ Thumbs.db
 /*-verified.json
 /level-test-failed.txt
 /camera-*.csv
+/开发工程/*.png
+/开发工程/*-verified.json
+/开发工程/level-test-failed.txt
+/开发工程/camera-*.csv

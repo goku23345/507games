@@ -6,7 +6,11 @@
 
 供朋友共同开发的 Unity 平台战斗白模。此存档对应最后试玩的**含上层伸缩地刺版本**，包含冲撞破门、中继钥匙任务、安全缺口、地下双路线、必经升降台、多层 Boss、剧情道具及末端返回上层。
 
-## 直接下载试玩（不需要 Unity）
+## Mac 与 Windows 共同开发
+
+两种系统使用同一份工程。Mac 同学按[Mac协作说明](说明文档/Mac协作说明.md)安装同版本编辑器，在 Hub 中添加本文件夹，然后在主场景中 Play。构建菜单会在 Mac 输出 `.app`，在 Windows 输出 `.exe`。Mac 实机验收仍需由组员完成。
+
+## 直接下载试玩（Windows，不需要 Unity）
 
 [下载 Windows 64 位试玩包](https://github.com/goku23345/507games/releases/latest/download/507games-whitebox-windows-x64.zip) · [发布页](https://github.com/goku23345/507games/releases/latest)
 

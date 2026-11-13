@@ -50,7 +50,7 @@ public partial class KnightLevel : MonoBehaviour {
  void Start(){
   tuning=Resources.Load<CombatTuning>("CombatTuning");if(tuning==null)tuning=ScriptableObject.CreateInstance<CombatTuning>();speed=tuning.walkSpeed;jumpSpeed=tuning.jumpVelocity;gravity=tuning.gravity;
   cameraProbe=System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-camera-probe")>=0; Application.targetFrameRate=60;Time.timeScale=1;verify=System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-verify-level")>=0;
-  font=Font.CreateDynamicFontFromOSFont("Microsoft YaHei",18);cam=Camera.main;cam.orthographicSize=5.625f;cam.backgroundColor=new Color(.07f,.1f,.14f);
+  font=Font.CreateDynamicFontFromOSFont(new[]{"Microsoft YaHei","PingFang SC","Heiti SC","Arial Unicode MS","Arial"},18);cam=Camera.main;cam.orthographicSize=5.625f;cam.backgroundColor=new Color(.07f,.1f,.14f);
   RenderSettings.ambientLight=new Color(.7f,.76f,.82f);
   var light=new GameObject("Key light").AddComponent<Light>();light.type=LightType.Directional;light.transform.rotation=Quaternion.Euler(35,-25,0);
   // Chunk data above is the editable map. Thin platforms are one-way from below.
